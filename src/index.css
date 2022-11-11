@@ -11,6 +11,6 @@
 }
 
 
-.hover\:shaddow-card:hover {
+.shaddow-card {
   box-shadow: 12px 15px #c7c6c6;
 }
