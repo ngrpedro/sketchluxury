@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-noto {
+  font-family: 'Noto Serif', serif;
+}
+
+.shaddowbutton {
+  box-shadow: 5px 5px #c7c6c6;
+}
