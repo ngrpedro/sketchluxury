@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import mainimage from "../assets/mainimage.svg"
 
 
+
+
 const Hero = () => {
+
+
     return (
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 sm:px-20 py-14 md:flex-row flex-col items-center">

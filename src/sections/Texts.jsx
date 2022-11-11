@@ -3,8 +3,17 @@ import React from 'react'
 import men from "../assets/men.svg"
 import team from "../assets/team.svg"
 
+import { useEffect } from "react"
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Texts = () => {
+
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }), [];
+
     return (
         <div>
             <section className="text-gray-600 body-font flex">
@@ -29,11 +38,11 @@ const Texts = () => {
                 </div>
             </section>
 
-            <hr className='my-10 sm:mx-60'/>
+            <hr className='my-10 sm:mx-60' />
 
             <section className="text-gray-600 body-font flex">
                 <div className="container mx-auto flex flex-col px-5 sm:px-20 pb-14 pt-0 md:flex-row-reverse items-center justify-between w-full">
-                    <div className='flex flex-col items-start max-w-xl'>
+                    <div data-aos="fade-left" className='flex flex-col items-start max-w-xl'>
                         <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900 font-noto">
                             Simple way to male stylish living room
                         </h1>
@@ -47,7 +56,7 @@ const Texts = () => {
                             </button>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-right">
                         <img src={men} alt="" className='md:max-w-md' />
                     </div>
                 </div>

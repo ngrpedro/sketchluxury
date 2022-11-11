@@ -1,8 +1,17 @@
 import { Bank, House, Jeep } from 'phosphor-react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import ServiceCards from '../components/ServiceCards'
 
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
+
 const Services = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }), [];
+
     return (
         <div className='container mx-auto px-5 sm:px-20 py-14 flex flex-col items-center justify-center'>
             <div className='max-w-sm text-center space-y-5'>
@@ -12,7 +21,7 @@ const Services = () => {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 pt-20'>
+            <div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-3 gap-10 pt-20' >
                 <ServiceCards />
             </div>
         </div>
