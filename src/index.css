@@ -9,3 +9,8 @@
 .shaddowbutton {
   box-shadow: 5px 5px #c7c6c6;
 }
+
+
+.hover\:shaddow-card:hover {
+  box-shadow: 12px 15px #c7c6c6;
+}
